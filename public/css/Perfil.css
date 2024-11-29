@@ -1,0 +1,179 @@
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+/* Container dos itens de informação */
+.info-item {
+    display: flex;
+    /* Flexbox para alinhar horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 10px;
+    /* Espaçamento entre ícone e texto */
+    margin-bottom: 1rem;
+    /* Espaçamento entre as linhas */
+}
+
+/* Ícones */
+.info-item i {
+    color: #007bff;
+    font-size: 1.6rem;
+    min-width: 30px;
+    /* Largura fixa para alinhar ícones */
+    text-align: center;
+}
+
+/* Rótulos */
+.info-item strong {
+    min-width: 120px;
+    /* Largura fixa para alinhar rótulos */
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Ajustes específicos para Idade e CPF */
+.info-item.idade strong,
+.info-item.cpf strong {
+    min-width: 120px;
+    /* Alinhamento com os outros rótulos */
+}
+
+/* Texto de conteúdo */
+.info-item span {
+    flex: 1;
+    /* Faz o conteúdo ocupar o espaço restante */
+    text-align: left;
+}
+
+/* Card Container */
+.container-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.card-profile {
+    background-color: #1e1e1e;
+    /* Fundo escuro para o card */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+    background-color: #000066;
+    /* Azul profundo para as informações */
+    color: #fff;
+}
+
+.card-body h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    border-radius: 10px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.fa-lock {
+    margin-right: 0.5rem;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-map-marker-alt {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #1e1e1e;
+    /* Fundo escuro */
+    color: #eaeaea;
+    /* Texto claro */
+    border: none;
+    font-weight: 500;
+    padding: 1.2rem;
+    cursor: pointer;
+    /* Muda o cursor para pointer */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+
+.list-group-item:hover {
+    background-color: #000033;
+    /* Tom mais escuro de azul */
+    color: white;
+    /* Texto fica branco no hover */
+}
+
+.list-group-item.active {
+    background-color: #000066;
+    /* Azul profundo */
+    color: white;
+    /* Texto branco */
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+.Parede_Informacao {
+    margin-right: 1%;
+}
+
+.Parede_Informacao2 {
+    margin-right: 0.6%;
+}
+
+/* Animação de deslizamento suave */
+#formAlterarSenha {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+#formAlterarSenha.mostrar {
+    max-height: 300px;
+    /* Defina uma altura suficiente para o formulário */
+}

@@ -1,0 +1,167 @@
+.grafico {
+    max-width: 400px;
+    /* Limita a largura */
+    height: 300px;
+    /* Define altura fixa */
+    margin: 0 auto;
+    /* Centraliza no contêiner */
+}
+
+.card {
+    border: none;
+    /* Remove bordas do card */
+    box-shadow: none;
+    /* Remove sombras */
+}
+
+.card-body {
+    padding: 0;
+    /* Remove o padding interno do corpo */
+}
+
+#graficoTransacoes,
+#graficoPizza {
+    display: block;
+    margin: auto;
+    /* Centraliza o gráfico */
+    width: 100%;
+    /* Deixa responsivo */
+    height: 300px;
+    /* Define altura fixa para o canvas */
+    border: none;
+    /* Remove qualquer borda do canvas */
+}
+
+/* public/css/home.css */
+
+/* Global Settings */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar fixa */
+.fixed-top {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+    /* Garante que fica acima de outros elementos */
+}
+
+/* Content Wrapper Padding */
+#content-wrapper {
+    padding-top: 20px;
+}
+
+/* Cards de Status */
+.card-status {
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-status:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-status h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.card-status p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+/* Card para Principais Empresas */
+#topEmpresasCard {
+    cursor: pointer;
+}
+
+#topEmpresasCard:hover {
+    background-color: #f0f0f0;
+}
+
+/* Gráficos */
+#graficoTransacoes,
+#graficoPizza {
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarefas - Cards */
+.card-tarefa {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-tarefa .card-header {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-tarefa ul {
+    padding-left: 0;
+}
+
+.card-tarefa .tarefa-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-tarefa .tarefa-item:last-child {
+    border-bottom: none;
+}
+
+.tarefa-titulo {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.tarefa-detalhes {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.tarefa-detalhes .badge {
+    margin-top: 5px;
+}
+
+/* Botões */
+#content-wrapper .btn {
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #36A2EB;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#content-wrapper .btn:hover {
+    background-color: #007BFF;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-status {
+        margin-bottom: 15px;
+    }
+
+    #topEmpresasCard {
+        margin-bottom: 15px;
+    }
+
+    .card-tarefa {
+        margin-bottom: 20px;
+    }
+}

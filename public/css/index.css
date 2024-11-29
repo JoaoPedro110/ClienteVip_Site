@@ -1,0 +1,157 @@
+/* Fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fc;
+    /* Fundo claro similar ao SB Admin */
+    color: #5a5c69;
+    /* Texto mais escuro */
+}
+
+/* Estilos gerais para os cards */
+.card {
+    border: 1px solid #e3e6f0;
+    /* Borda mais suave */
+    border-radius: 10px;
+    /* Bordas mais suaves */
+    box-shadow: 0 0.15rem 1.75rem rgba(58, 59, 69, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    /* Tamanho menor */
+    margin: 0 auto;
+    /* Centraliza os cards */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(58, 59, 69, 0.2);
+}
+
+/* Estilo específico para as tarefas */
+.card-tarefa {
+    background-color: #fff;
+    padding: 15px;
+    /* Diminui o padding para cards mais compactos */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-tarefa .card-header {
+    font-weight: 700;
+    font-size: 1rem;
+    /* Tamanho de fonte reduzido */
+    background-color: #4e73df;
+    /* Azul padrão SB Admin */
+    color: #fff;
+    border-bottom: 1px solid #e3e6f0;
+    border-radius: 8px 8px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    /* Diminui o padding no cabeçalho */
+}
+
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Reduz o padding dentro do item */
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e3e6f0;
+    color: #5a5c69;
+    margin-bottom: 8px;
+    /* Menor margem entre itens */
+    transition: background-color 0.3s ease;
+}
+
+.tarefa-item:hover {
+    background-color: #f8f9fc;
+}
+
+.tarefa-titulo {
+    font-size: 0.95rem;
+    /* Fonte menor */
+    font-weight: 600;
+    color: #4e73df;
+}
+
+.tarefa-detalhes {
+    font-size: 0.85rem;
+    /* Fonte menor para detalhes */
+    color: #858796;
+}
+
+.badge.bg-danger,
+.badge.bg-warning {
+    font-size: 0.75rem;
+    /* Fonte menor nas badges */
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .card-status {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: 80px;
+    }
+
+    #topEmpresasCard {
+        min-height: 100px;
+    }
+
+    .card-tarefa .card-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-6 {
+        max-width: 100%;
+    }
+
+    #topEmpresasCard .card-body {
+        padding: 5px;
+    }
+
+    .tarefa-item {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para Gráficos */
+#graficoTransacoes {
+    width: 80% !important;
+    height: 200px !important;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#graficoPizza {
+    width: 100% !important;
+    max-width: 250px;
+    height: auto !important;
+    max-height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-body canvas {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.col-lg-6,
+.col-md-8,
+.col-sm-10 {
+    max-width: 500px;
+}

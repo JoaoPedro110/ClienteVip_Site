@@ -1,0 +1,25 @@
+/* Customização das cores para Toastr */
+#toast-container .toast-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#toast-container .toast-error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Ajustes para dispositivos móveis */
+.table-responsive table {
+    font-size: 0.875rem;
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+}
+
+.table .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
